@@ -1,13 +1,13 @@
-### GrabNavi - AI-powered orchestration system for last-mile logistics
+## GrabNavi - AI-powered orchestration system for last-mile logistics
 
-## Files
+# Files
 - Synapse/GrabNavi.ipynb: Main notebook with full implementation.
 - docs/DESIGN.md: Agent architecture and design.
 - docs/PROMPTS.md: Prompt engineering strategies.
 - docs/grab.pptx: Detailed Walkthrough ppt
 - README.md: Quickstart guide.
 
-## Folder Structure
+# Folder Structure
 ```
 GrabNavi/
 │── docs/
@@ -19,30 +19,30 @@ GrabNavi/
 └── README.md
 ```
 
-## Setup
+# Setup
 Install dependencies inside Colab or local environment:
 bash
 !pip install google-generativeai langchain langchain-google-genai networkx pandas pillow
 
 
-## Run
+# Run
 - Open GrabNavi.ipynb in Jupyter/Colab.
 - Execute cells sequentially to run the system.
 
-## Features
+# Features
 - LLM-powered case detection with Gemini.
 - Compound case handling (multiple issues in one report).
 - NetworkX graph simulation for traffic rerouting.
 - Human-in-loop escalation support.
 
 
-## Notes 
+# Notes 
 - Uses Gemini-1.5-flash API in Google AI Studio.
 - For image-based damage cases, upload the relevant image when prompted.
 - doc/image.png
 
-## Open the Colab Notebook: 
+# Open the Colab Notebook: 
 [GrabNavi Colab](https://colab.research.google.com/drive/1s5RgnjcO1Feup_5DhT8BFmP3iK8n4-75?usp=sharing)  
 
-## Flow Diagram
+# Flow Diagram
 ![GrabNavi Flow](doc/image.png)
