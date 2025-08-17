@@ -12,10 +12,10 @@
 GrabNavi/
 │── docs/
 │   ├── DESIGN.md                # Agent design & architecture
-│   ├── PROMPTS.md             # prompt and its analysis
-│   ├── grab.pptx              
-│   └── image.png                  # flow diagram
-│── GrabNavi.ipynb                # Main orchestrator agent
+│   ├── PROMPTS.md               # Prompt and its analysis
+│   ├── grab.pptx                # Detailed ppt           
+│   └── image.png                # Flow diagram
+│── GrabNavi.ipynb               # Main orchestrator agent
 └── README.md
 ```
 
