@@ -38,7 +38,7 @@ GrabNavi/
 - For image-based damage cases, upload the relevant image when prompted.
 - doc/image.png
 
+Open the Colab Notebook: [GrabNavi Colab](https://colab.research.google.com/drive/1s5RgnjcO1Feup_5DhT8BFmP3iK8n4-75?usp=sharing)  
 
 # Use Case Diagram
-
 ![GrabNavi Flow](doc/image.png)
