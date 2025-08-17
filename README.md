@@ -4,6 +4,7 @@
 - Synapse/GrabNavi.ipynb: Main notebook with full implementation.
 - docs/DESIGN.md: Agent architecture and design.
 - docs/PROMPTS.md: Prompt engineering strategies.
+- docs/grab.pptx: Detailed Walkthrough ppt
 - README.md: Quickstart guide.
 
 ## Folder Structure
@@ -11,7 +12,8 @@
 GrabNavi/
 │── docs/
 │   ├── DESIGN.md                # Agent design & architecture
-│   └── PROMPTS.md             # prompt and its analysis
+│   ├── PROMPTS.md             # prompt and its analysis
+│   ├── grab.pptx              
 │   └── image.png                  # flow diagram
 │── GrabNavi.ipynb                # Main orchestrator agent
 └── README.md
