@@ -22,6 +22,17 @@ bash
 - NetworkX graph simulation for traffic rerouting.
 - Human-in-loop escalation support.
 
+## Folder Structure
+```
+GrabNavi/
+│── docs/
+│   ├── DESIGN.md                # Agent design & architecture
+│   └── PROMPTS.md             # prompt and its analysis
+│   └── image.png                  # flow diagram
+│── GrabNavi.ipynb                # Main orchestrator agent
+└── README.md
+```
+
 # Notes 
 - Uses Gemini-1.5-flash API in Google AI Studio.
 - For image-based damage cases, upload the relevant image when prompted.
