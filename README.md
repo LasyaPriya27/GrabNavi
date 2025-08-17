@@ -30,4 +30,4 @@ bash
 
 # Use Case Diagram
 
-![GrabNavi Flow](image.png)
+![GrabNavi Flow](doc/image.png)
