@@ -1,4 +1,4 @@
-# GrabNavi Submission
+# GrabNavi - AI-powered orchestration system for last-mile logistics
 
 ## Files
 - Synapse/GrabNavi.ipynb: Main notebook with full implementation.
