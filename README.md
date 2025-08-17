@@ -39,7 +39,7 @@ bash
 # Notes 
 - Uses Gemini-1.5-flash API in Google AI Studio.
 - For image-based damage cases, upload the relevant image when prompted.
-- doc/image.png
+- We have upload an image already with "download1.jpg" - you can try it when running it
 
 # Open the Colab Notebook: 
 [GrabNavi Colab](https://colab.research.google.com/drive/1s5RgnjcO1Feup_5DhT8BFmP3iK8n4-75?usp=sharing)  
