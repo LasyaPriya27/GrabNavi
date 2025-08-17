@@ -4,7 +4,18 @@
 - Synapse/GrabNavi.ipynb: Main notebook with full implementation.
 - docs/DESIGN.md: Agent architecture and design.
 - docs/PROMPTS.md: Prompt engineering strategies.
-- docs/README.md: Quickstart guide.
+- README.md: Quickstart guide.
+
+## Folder Structure
+```
+GrabNavi/
+│── docs/
+│   ├── DESIGN.md                # Agent design & architecture
+│   └── PROMPTS.md             # prompt and its analysis
+│   └── image.png                  # flow diagram
+│── GrabNavi.ipynb                # Main orchestrator agent
+└── README.md
+```
 
 ## Setup
 Install dependencies inside Colab or local environment:
@@ -22,16 +33,6 @@ bash
 - NetworkX graph simulation for traffic rerouting.
 - Human-in-loop escalation support.
 
-## Folder Structure
-```
-GrabNavi/
-│── docs/
-│   ├── DESIGN.md                # Agent design & architecture
-│   └── PROMPTS.md             # prompt and its analysis
-│   └── image.png                  # flow diagram
-│── GrabNavi.ipynb                # Main orchestrator agent
-└── README.md
-```
 
 # Notes 
 - Uses Gemini-1.5-flash API in Google AI Studio.
