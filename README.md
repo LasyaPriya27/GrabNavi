@@ -15,7 +15,8 @@ GrabNavi/
 │   ├── PROMPTS.md               # Prompt and its analysis
 │   ├── grab.pptx                # Detailed ppt           
 │   └── image.png                # Flow diagram
-│── GrabNavi.ipynb               # Main orchestrator agent
+│── Synapse/
+│   └── GrabNavi.ipynb           # Main orchestrator agent
 └── README.md
 ```
 
