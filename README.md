@@ -70,25 +70,6 @@ The implementation in `GrabNavi_finall.ipynb` is intentionally pragmatic: it pri
 
 ---
 
-## What’s in the notebook
-
-Key notebook sections (look for these headings inside the notebook):
-
-* **Install & Imports** — dependency installation and imports
-* **API Key + Base Graph Setup** — configure LLM and VisionService keys
-* **VisionService** — captioning + image decisions
-* **Tool Implementations** — concrete tools used by the agent
-* **System Prompt, Text LLM, Incident Detector** — LLM prompt templates and detector functions
-* **Compound Problem Handling** — examples and trace generation
-* **Upload Evidence Image** — demo of image uploads
-* **Run Trace Compound / Single Run Trace** — run demos that generate trace.json / trace.csv
-* **SendGrid Email Notification** — email integration demo
-* **DynamoDB** — persistence configuration and example read/write helpers
-* **Flask** — a lightweight server/agent wrapper (cells exist to run the agent as an HTTP endpoint)
-* **Driver / Customer Gradio UIs** — demo interfaces for manual testing
-
----
-
 ## 4. Prerequisites
 
 * Python 3.10+ recommended.
