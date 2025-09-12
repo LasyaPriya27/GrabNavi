@@ -59,7 +59,54 @@ The implementation in `GrabNavi_finall.ipynb` is intentionally pragmatic: it pri
                                    [Customer Gradio UI / Notifications]
 ```
 
-* The notebook contains sections to run everything from a single environment. For a real deployment you'd split services (Flask + Gradio UIs + DB) across containers/servers.
+* **Notebook**: `GrabNavi_finall.ipynb` contains the full prototype: utilities, services, tools, trace runners and UI cells.
+* **VisionService**: Shared singleton that handles image captioning & simple image-based decisions.
+* **Text LLM layer**: Uses a configurable LLM (example cells use Google generative AI clients via `google-generativeai`/`langchain` bindings) to classify incidents and suggest next actions.
+* **Tools**: Small, deterministic helper functions that perform specific actions: `tool_check_traffic`, `tool_calculate_alternative_route`, `tool_collect_evidence`, `tool_notify_user`, `tool_issue_refund`, `tool_exonerate_driver`, etc.
+* **Compound handler**: Logic to detect and sequence multiple incident types into a prioritized resolution plan and a combined trace artifact.
+* **Persistence**: Hooks to AWS DynamoDB for storing incidents and session logs (configurable via AWS credentials).
+* **Notification**: Email via SendGrid (driver/customer notifications) and sample console output for auditing.
+* **UIs**: Gradio-based driver and customer interfaces inside the notebook for quick demos.
+
+---
+
+## What’s in the notebook
+
+Key notebook sections (look for these headings inside the notebook):
+
+* **Install & Imports** — dependency installation and imports
+* **API Key + Base Graph Setup** — configure LLM and VisionService keys
+* **VisionService** — captioning + image decisions
+* **Tool Implementations** — concrete tools used by the agent
+* **System Prompt, Text LLM, Incident Detector** — LLM prompt templates and detector functions
+* **Compound Problem Handling** — examples and trace generation
+* **Upload Evidence Image** — demo of image uploads
+* **Run Trace Compound / Single Run Trace** — run demos that generate trace.json / trace.csv
+* **SendGrid Email Notification** — email integration demo
+* **DynamoDB** — persistence configuration and example read/write helpers
+* **Flask** — a lightweight server/agent wrapper (cells exist to run the agent as an HTTP endpoint)
+* **Driver / Customer Gradio UIs** — demo interfaces for manual testing
+
+---
+
+## Quickstart
+
+> The fastest way to get started is to run the notebook interactively (Colab or locally) and follow the configuration cells.
+
+1. Clone this repo (or upload the notebook to Colab/Jupyter):
+
+> **Open directly in Colab:** [Open GrabNavi notebook in Colab](https://colab.research.google.com/drive/1zhH_jaeqPdNa-GDl3yZ0Kf7CEoMdRGoq?usp=sharing)
+
+```bash
+git clone <your-repo-url>
+cd <repo-folder>
+```
+
+2. Install dependencies (the notebook installs these; you can also create a `requirements.txt`):
+
+```bash
+pip install google-generativeai langchain langchain-google-genai networkx pandas pillow gradio boto3 sendgrid matplotlib
+```
 
 ## 4. Prerequisites
 
