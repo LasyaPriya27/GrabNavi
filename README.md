@@ -89,25 +89,6 @@ Key notebook sections (look for these headings inside the notebook):
 
 ---
 
-## Quickstart
-
-> The fastest way to get started is to run the notebook interactively (Colab or locally) and follow the configuration cells.
-
-1. Clone this repo (or upload the notebook to Colab/Jupyter):
-
-> **Open directly in Colab:** [Open GrabNavi notebook in Colab](https://colab.research.google.com/drive/1zhH_jaeqPdNa-GDl3yZ0Kf7CEoMdRGoq?usp=sharing)
-
-```bash
-git clone <your-repo-url>
-cd <repo-folder>
-```
-
-2. Install dependencies (the notebook installs these; you can also create a `requirements.txt`):
-
-```bash
-pip install google-generativeai langchain langchain-google-genai networkx pandas pillow gradio boto3 sendgrid matplotlib
-```
-
 ## 4. Prerequisites
 
 * Python 3.10+ recommended.
