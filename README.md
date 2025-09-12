@@ -1,6 +1,5 @@
-# GrabNavi
 <img width="552" height="125" alt="image-removebg-preview" src="https://github.com/user-attachments/assets/7eaf6d24-3abc-49ed-8062-0682c9983b0c" />
-
+# GrabNavi
 **Prototype build** — A conversational, vision-enabled support & navigation prototype for delivery operations (Grab Delivery style). This repository contains the Jupyter notebook `GrabNavi_finall.ipynb` which wires together:
 
 * Google Generative AI (Gemini) for vision + text reasoning
