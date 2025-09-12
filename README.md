@@ -9,7 +9,6 @@
 * AWS DynamoDB for lightweight event/log storage
 * Route calculation & Folium-based map plotting
 
-> This README is written to match the notebook step-by-step. If you want a compact `README.md` for your repo, copy the contents of this document into `README.md`.
 
 ---
 
@@ -26,7 +25,6 @@
 9. Usage / demo flows
 10. Notes, limitations & cost warnings
 11. Contributing
-12. License & credits
 
 ---
 
@@ -75,7 +73,6 @@ pip install -r requirements.txt
 # boto3, pandas, folium, networkx, pillow, rich, matplotlib, requests
 ```
 
-> Tip: It is common in notebooks to have `!pip install ...` cells. If you prefer, create a virtualenv and install the packages there.
 
 ## 5. Quick start (run locally)
 
@@ -176,33 +173,4 @@ If you'd like to extend the project, here are suggested improvements:
 
 Create issues, open PRs, and add a short CONTRIBUTING.md to guide collaborators.
 
-## 12. License & credits
-
-This notebook and README are provided as a hackathon prototype. Add a license of your choice — e.g. MIT:
-
-```
-MIT License
-
-Copyright (c) YEAR Your Name
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-[...]
-```
-
 ---
-
-### Final notes
-
-* This README is synced to `GrabNavi_finall.ipynb` and follows its sectioning closely (Install → Vision → Tools → DB → Flask → Gradio UIs). If you want, I can:
-
-  * Produce a compact `README.md` (single-file) with a short demo GIF.
-  * Generate a `requirements.txt` automatically from the notebook imports.
-  * Extract a production-friendly `app.py` (Flask agent) and `driver_app.py` & `customer_app.py` Gradio apps.
-
-If you'd like any of the above, tell me which option to produce next and I will generate the files here.
