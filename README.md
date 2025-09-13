@@ -27,7 +27,7 @@
 │   ├─ driver_permanent_port.txt
 │   └─ customer_colab_link.txt
 ├─ docs/                            # submission artifacts
-│   ├─ GrabNavi - round 2 submission.pdf
+│   ├─ GrabNavi - round 3 submission.pdf
 │   └─ demo_video/ (mp4)            # recorded demo videos         
 └─ assets/                          # assets (PNG, SVG)
    └─ banners_and_logos/           # images, banners, logos used in Gradio/ UI/ README
