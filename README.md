@@ -22,7 +22,6 @@
 ├─ GrabNavi_finall.ipynb            # main notebook prototype (run top-to-bottom)
 ├─ README.md                        # this README
 ├─ requirements.txt                 # suggested packages
-├─ agent_server.py                  # extracted Flask endpoints (optional)
 ├─ colab/                           # Colab-specific shortcuts (links / tiny wrappers)
 │   ├─ GrabNavi_main_colab_link.txt
 │   ├─ submission_colab_link.txt
