@@ -30,7 +30,7 @@
 │   ├─ GrabNavi - round 3 submission.pdf
 │   └─ demo_video/ (mp4)            # recorded demo videos         
 └─ assets/                          # assets (PNG, SVG)
-   └─ banners_and_logos/           # images, banners, logos used in Gradio/ UI/ README
+   └─ banners_and_logos/            # images, banners, logos used in Gradio/ UI/ README
 ```
 
 ## Table of contents
