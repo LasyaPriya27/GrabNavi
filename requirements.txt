@@ -1,0 +1,29 @@
+# Core AI & agent libraries
+google-generativeai
+langchain
+langchain-google-genai
+
+# Web & UI
+flask
+gradio
+
+# AWS & infra
+boto3
+
+# Utilities & data
+pandas
+numpy
+requests
+python-dotenv
+pillow
+
+# Mapping & visualization
+folium
+networkx
+matplotlib
+
+# Email
+sendgrid
+
+# Nice-to-have
+rich
