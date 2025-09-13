@@ -1,0 +1,6 @@
+Customer-facing Colab (customer/support UI demo):
+https://colab.research.google.com/drive/1h96Juh7WzD67P2DRJyIvFftJ6bCQFNvA?usp=sharing
+
+Notes:
+- This notebook focuses on the customer/support demo flows (fetching traces, viewing notifications, demoing support actions).
+- Run the cells in order and ensure any required service endpoints (Flask agent / DynamoDB) are reachable or stubbed.
