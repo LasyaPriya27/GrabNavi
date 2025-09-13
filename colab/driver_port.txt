@@ -1,0 +1,23 @@
+Driver dashboard — permanent port / demo endpoint
+
+URL (driver dashboard - demo / staging):
+http://98.84.186.209:8080/
+
+Notes:
+- This is a permanent demo/staging port where the driver frontend is deployed (port 8080).
+- Before sharing with others, confirm EC2 / VM firewall & security group rules allow inbound traffic on port 8080.
+- Recommended quick checks:
+  - From your local machine: open the URL in a browser (http://98.84.186.209:8080/).
+  - From terminal (simple health check): 
+      curl -I http://98.84.186.209:8080/
+  - From Colab (if you need to call the agent or test from a notebook), use `requests`:
+      import requests
+      requests.get("http://98.84.186.209:8080/").status_code
+
+Security & production notes:
+- This endpoint is intended for demo / testing only. Do NOT expose production traffic or PII-sensitive flows without HTTPS, authentication, and proper network controls.
+- If you plan to let teammates access the dashboard, consider:
+  - Adding a lightweight auth proxy (basic auth / IP whitelist).
+  - Enabling HTTPS (via a reverse proxy / load balancer) before sharing public links.
+
+If the port or IP changes, update this file and the README links in the repo.
