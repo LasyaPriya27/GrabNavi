@@ -24,18 +24,13 @@
 ├─ requirements.txt                 # suggested packages
 ├─ colab/                           # Colab-specific shortcuts (links / tiny wrappers)
 │   ├─ GrabNavi_main_colab_link.txt
-│   ├─ submission_colab_link.txt
+│   ├─ driver_permanent_port.txt
 │   └─ customer_colab_link.txt
 ├─ docs/                            # submission artifacts
 │   ├─ GrabNavi - round 2 submission.pdf
-│   ├─ slides/ (pptx/pdf)            # Round 2 slides
-│   ├─ demo_video/ (mp4)             # recorded demo videos
-│   └─ banners_and_logos/            # assets (PNG, SVG)
-├─ assets/                          # images, banners, logos used in README / UI
-├─ scripts/                         # helper scripts (start_flask.sh, deploy helpers)
-├─ traces/                          # sample trace.json / trace.csv outputs
-├─ .env.example                     # example env file (no secrets)
-└─ LICENSE
+│   └─ demo_video/ (mp4)            # recorded demo videos         
+└─ assets/                          # assets (PNG, SVG)
+   └─ banners_and_logos/           # images, banners, logos used in Gradio/ UI/ README
 ```
 
 ## Table of contents
