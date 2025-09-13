@@ -27,7 +27,8 @@
 8. Notebook walkthrough (cell-by-cell mapping)
 9. Usage / demo flows
 10. Notes, limitations & cost warnings
-11. Contributing
+11. Repository structure (assets & submission)
+12. Contributing
 
 ---
 
@@ -46,6 +47,9 @@ The implementation in `GrabNavi_finall.ipynb` is intentionally pragmatic: it pri
 * A small Flask endpoint that acts as the agent backend.
 * Two Gradio front-ends: one for drivers and one for customers/support.
 * Utilities for sending delay/notification emails (example templates included).
+* Human-in-the-loop orchestration for risky / financial actions.
+* Compound-incident detection and sequencing to avoid conflicting actions.
+* Map-aware rerouting using AWS Location Service and on‑EC2 routing helpers.
 
 ## 3. Architecture (high level)
 
@@ -174,7 +178,51 @@ The notebook is already separated into clear sections. Run the cells in-order. H
 * **Credentials**: Never commit real API keys to source control. Use environment variables or a secrets manager.
 * **Privacy**: If you upload real customer photos, ensure you have consent and that you handle PII appropriately.
 
-## 11. Contributing
+## 11. Round 2 submission & repository structure
+
+I have included the items from the Round 2 submission (submission PDF and attached assets) into the repository notes and structure. The submission includes direct links and assets that we reference here (Colab links, GitHub, driver port, customer colab, slides). Key links from the Round 2 submission:
+
+* GrabNavi GitHub: `https://github.com/LasyaPriya27/GrabNavi`
+* Driver permanent port (deployed frontend): `http://98.84.186.209:8080/` (driver dashboard on port **8080**)
+* Colab #1 (submission): `https://colab.research.google.com/drive/1zhH_jaeqPdNa-GDl3yZ0Kf7CEoMdRGoq?usp=sharing`
+* Colab #2 / Customer Colab: `https://colab.research.google.com/drive/1h96Juh7WzD67P2DRJyIvFftJ6bCQFNvA?usp=sharing`
+* Main Colab (also linked in README Quickstart): `https://colab.research.google.com/drive/1zhH_jaeqPdNa-GDl3yZ0Kf7CEoMdRGoq?usp=sharing`
+
+**Core features emphasized in the Round 2 submission**:
+
+* Human-in-loop orchestrator (pauses for human approval on risky actions)
+* Compound-incident orchestration (split, prioritize, dedupe notifications)
+* Map-aware orchestrator (AWS Location for live traffic & rerouting)
+* Email-orchestrator (SendGrid templates, email logs & dedupe)
+* End-to-end traces for audit & explainability
+
+### Repository structure (suggested / reflected in submission)
+
+```
+/ (repo root)
+├─ GrabNavi_finall.ipynb            # main notebook prototype (run top-to-bottom)
+├─ README.md                        # this README
+├─ requirements.txt                 # suggested packages
+├─ agent_server.py                  # extracted Flask endpoints (optional)
+├─ colab/                           # Colab-specific shortcuts (links / tiny wrappers)
+│   ├─ GrabNavi_main_colab_link.txt
+│   ├─ submission_colab_link.txt
+│   └─ customer_colab_link.txt
+├─ docs/                            # submission artifacts
+│   ├─ GrabNavi - round 2 submission.pdf
+│   ├─ slides/ (pptx/pdf)            # Round 2 slides
+│   ├─ demo_video/ (mp4)             # recorded demo videos
+│   └─ banners_and_logos/            # assets (PNG, SVG)
+├─ assets/                          # images, banners, logos used in README / UI
+├─ scripts/                         # helper scripts (start_flask.sh, deploy helpers)
+├─ traces/                          # sample trace.json / trace.csv outputs
+├─ .env.example                     # example env file (no secrets)
+└─ LICENSE
+```
+
+---
+
+## 12. Contributing
 
 If you'd like to extend the project, here are suggested improvements:
 
@@ -182,7 +230,5 @@ If you'd like to extend the project, here are suggested improvements:
 * Replace DynamoDB with a relational DB or a more structured event store.
 * Add tests and CI for the core agent decision logic.
 * Add authentication for the Gradio UIs and protect production APIs.
-
-Create issues, open PRs, and add a short CONTRIBUTING.md to guide collaborators.
 
 ---
