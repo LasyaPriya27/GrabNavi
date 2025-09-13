@@ -15,6 +15,30 @@
 
 ---
 
+### Repository structure (suggested / reflected in submission)
+
+```
+/ (repo root)
+├─ GrabNavi_finall.ipynb            # main notebook prototype (run top-to-bottom)
+├─ README.md                        # this README
+├─ requirements.txt                 # suggested packages
+├─ agent_server.py                  # extracted Flask endpoints (optional)
+├─ colab/                           # Colab-specific shortcuts (links / tiny wrappers)
+│   ├─ GrabNavi_main_colab_link.txt
+│   ├─ submission_colab_link.txt
+│   └─ customer_colab_link.txt
+├─ docs/                            # submission artifacts
+│   ├─ GrabNavi - round 2 submission.pdf
+│   ├─ slides/ (pptx/pdf)            # Round 2 slides
+│   ├─ demo_video/ (mp4)             # recorded demo videos
+│   └─ banners_and_logos/            # assets (PNG, SVG)
+├─ assets/                          # images, banners, logos used in README / UI
+├─ scripts/                         # helper scripts (start_flask.sh, deploy helpers)
+├─ traces/                          # sample trace.json / trace.csv outputs
+├─ .env.example                     # example env file (no secrets)
+└─ LICENSE
+```
+
 ## Table of contents
 
 1. Overview
@@ -195,30 +219,6 @@ I have included the items from the Round 2 submission (submission PDF and attach
 * Map-aware orchestrator (AWS Location for live traffic & rerouting)
 * Email-orchestrator (SendGrid templates, email logs & dedupe)
 * End-to-end traces for audit & explainability
-
-### Repository structure (suggested / reflected in submission)
-
-```
-/ (repo root)
-├─ GrabNavi_finall.ipynb            # main notebook prototype (run top-to-bottom)
-├─ README.md                        # this README
-├─ requirements.txt                 # suggested packages
-├─ agent_server.py                  # extracted Flask endpoints (optional)
-├─ colab/                           # Colab-specific shortcuts (links / tiny wrappers)
-│   ├─ GrabNavi_main_colab_link.txt
-│   ├─ submission_colab_link.txt
-│   └─ customer_colab_link.txt
-├─ docs/                            # submission artifacts
-│   ├─ GrabNavi - round 2 submission.pdf
-│   ├─ slides/ (pptx/pdf)            # Round 2 slides
-│   ├─ demo_video/ (mp4)             # recorded demo videos
-│   └─ banners_and_logos/            # assets (PNG, SVG)
-├─ assets/                          # images, banners, logos used in README / UI
-├─ scripts/                         # helper scripts (start_flask.sh, deploy helpers)
-├─ traces/                          # sample trace.json / trace.csv outputs
-├─ .env.example                     # example env file (no secrets)
-└─ LICENSE
-```
 
 ---
 
