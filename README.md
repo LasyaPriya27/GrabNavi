@@ -196,9 +196,9 @@ The notebook is already separated into clear sections. Run the cells in-order. H
 * **Credentials**: Never commit real API keys to source control. Use environment variables or a secrets manager.
 * **Privacy**: If you upload real customer photos, ensure you have consent and that you handle PII appropriately.
 
-## 11. Round 2 submission & repository structure
+## 11. Round 3 submission & repository structure
 
-I have included the items from the Round 2 submission (submission PDF and attached assets) into the repository notes and structure. The submission includes direct links and assets that we reference here (Colab links, GitHub, driver port, customer colab, slides). Key links from the Round 2 submission:
+I have included the items from the Round 3 submission (submission PDF and attached assets) into the repository notes and structure. The submission includes direct links and assets that we reference here (Colab links, GitHub, driver port, customer colab, slides). Key links from the Round 3 submission:
 
 * GrabNavi GitHub: `https://github.com/LasyaPriya27/GrabNavi`
 * Driver permanent port (deployed frontend): `http://98.84.186.209:8080/` (driver dashboard on port **8080**)
@@ -206,7 +206,7 @@ I have included the items from the Round 2 submission (submission PDF and attach
 * Colab #2 / Customer Colab: `https://colab.research.google.com/drive/1h96Juh7WzD67P2DRJyIvFftJ6bCQFNvA?usp=sharing`
 * Main Colab (also linked in README Quickstart): `https://colab.research.google.com/drive/1zhH_jaeqPdNa-GDl3yZ0Kf7CEoMdRGoq?usp=sharing`
 
-**Core features emphasized in the Round 2 submission**:
+**Core features emphasized in the Round 3 submission**:
 
 * Human-in-loop orchestrator (pauses for human approval on risky actions)
 * Compound-incident orchestration (split, prioritize, dedupe notifications)
